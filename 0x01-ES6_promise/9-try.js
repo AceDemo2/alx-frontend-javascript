@@ -1,6 +1,6 @@
 function guardrail(mathFunction) {
   let queue = [];
-  const i = mathFunction(/;
+  const i = mathFunction();
   try {
     queue.push(i);
   } catch {
