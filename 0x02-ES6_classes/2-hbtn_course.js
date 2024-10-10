@@ -10,7 +10,7 @@ export default class HolbertonCourse {
   }
 
   set name(value) {
-    console.log('hello';
+    console.log('hello');
     if (typeof value !== 'string') {
       throw new TypeError('name must be a string');
     }
