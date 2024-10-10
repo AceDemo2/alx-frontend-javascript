@@ -1,8 +1,8 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   get name() {
@@ -33,8 +33,8 @@ export default class HolbertonCourse {
   }
 
   set students(value) {
-    if (!Array.isArray(value) && !value.every((elem) => typeof elem === 'string')) {
-      throw new TypeError('Students must be a array of strings');
+    if (!Array.isArray(value) || !value.every((elem) => typeof elem === 'string')) {
+      throw new TypeError('Students must be an array of strings');
     }
     this._students = value;
   }
