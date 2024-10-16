@@ -3,6 +3,6 @@ export default function hasValuesFromArray(myset, arr) {
     if (!myset.has(i)) {
       return false;
     }
-    return true;
   }
+  return true;
 }
