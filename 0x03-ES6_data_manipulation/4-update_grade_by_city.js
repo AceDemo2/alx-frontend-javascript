@@ -5,6 +5,7 @@ export default function updateStudentGradeByCity(lists, city, newGrades) {
     for (const k of newGrades) {
       if (j1.id === k.studentId) {
         j1.grade = k.grade;
+        break;
       }
     }
     if (j1.grade === undefined) {
