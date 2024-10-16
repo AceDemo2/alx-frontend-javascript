@@ -1,11 +1,8 @@
 export default function hasValuesFromArray(myset, arr) {
-  let j = 1;
-  for (let i of arr) {
-    if (myset.has(i)) {
-      continue;
+  for (const i of arr) {
+    if (!myset.has(i)) {
+      return false;
     }
-    j = 0;
-    break;
+    return true;
   }
-  return j ? true : false
 }
